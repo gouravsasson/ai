@@ -16,9 +16,9 @@ function Navbar() {
     setOpen(false);
   };
 
-  const scrollToStickySection = () => {
-    document.getElementById("sticky-section").scrollIntoView({ behavior: "smooth" });
-  };
+  // const scrollToStickySection = () => {
+  //   document.getElementById("sticky-section").scrollIntoView({ behavior: "smooth" });
+  // };
 
   return (
     <>
@@ -30,7 +30,7 @@ function Navbar() {
             <button className=" text-[#FFFFFF] font-Lexend Light font-bold">Home</button>
             <button 
               className=" text-[#FFFFFF] font-Lexend font-bold" 
-              onClick={scrollToStickySection}
+              // onClick={scrollToStickySection}
             >
               ChatBot
             </button>

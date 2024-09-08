@@ -1,14 +1,14 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import img1 from "@/assets/img/models.gif"
+import img1 from "@/assets/img/models.gif";
 import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function AboutUs() {
-  const containerRef = useRef(null);
-  const boxesRef = useRef([]);
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const boxesRef = useRef<(HTMLDivElement | null)[]>([]); // Use specific typing for better TypeScript support
 
   useEffect(() => {
     gsap.fromTo(
@@ -26,20 +26,22 @@ function AboutUs() {
     );
 
     boxesRef.current.forEach((box, index) => {
-      gsap.fromTo(
-        box,
-        { opacity: 0, y: 50 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1,
-          delay: index * 0.3,
-          scrollTrigger: {
-            trigger: box,
-            start: "top 80%",
-          },
-        }
-      );
+      if (box) {
+        gsap.fromTo(
+          box,
+          { opacity: 0, y: 50 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            delay: index * 0.3,
+            scrollTrigger: {
+              trigger: box,
+              start: "top 80%",
+            },
+          }
+        );
+      }
     });
   }, []);
 
@@ -67,23 +69,29 @@ function AboutUs() {
       <div className="flex justify-center gap-20 mt-[100px] mb-10">
         <div
           className="w-[600px] h-[650px] bg-[#594BE7] rounded-3xl p-5"
-          ref={(el) => (boxesRef.current[0] = el)}
+          ref={(el) => {
+            boxesRef.current[0] = el; // Do not return anything from here
+          }}
         >
-          
           <Image
-            className=" w-fit rounded-2xl shadow-lg"
+            className="w-fit rounded-2xl shadow-lg"
             src={img1}
             alt="gif"
-            
-          ></Image>
-          <div className=" pt-10 flex flex-col gap-3"> 
-          <h1 className="text-white text-xl">Efficiency & Scalability</h1>
-          <p className="text-white ">Build intelligent AI search & chat systems over hundreds of <br/> thousands web pages.</p> 
+          />
+          <div className="pt-10 flex flex-col gap-3">
+            <h1 className="text-white text-xl">Efficiency & Scalability</h1>
+            <p className="text-white">
+              Build intelligent AI search & chat systems over hundreds of
+              <br />
+              thousands web pages.
+            </p>
           </div>
         </div>
         <div
           className="w-[600px] h-[650px] bg-[#9086EF] rounded-3xl"
-          ref={(el) => (boxesRef.current[1] = el)}
+          ref={(el) => {
+            boxesRef.current[1] = el; // Do not return anything from here
+          }}
         ></div>
       </div>
     </div>
