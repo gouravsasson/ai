@@ -41,10 +41,10 @@ export default function Home() {
         <StickySection />
       </div>
       <div className="h-screen  bg-black">
-        <div className="  flex flex-col gap-20">
+        {/* <div className="  flex flex-col gap-20">
           <h1 className=" text-white text-[100px] text-center mt-20">Testimonials</h1>
           <InfiniteMoving />
-        </div>
+        </div> */}
       </div>
       <div className=" w-full h-screen">
         <BusinesSupport />
