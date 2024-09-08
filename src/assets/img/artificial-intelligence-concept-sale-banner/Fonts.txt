@@ -1,0 +1,1 @@
+Fonts used in this design: \r\n\r\nThird party Fonts: \r\n\r\nFont: Fira Sans \r\nAuthor: Carrois Apostrophe \r\nUrl: https://fonts.google.com/specimen/Fira+Sans \r\n\r\nFont: Roboto Condensed \r\nAuthor: Christian Robertson \r\nUrl: https://fonts.google.com/specimen/Roboto+Condensed \r\n\r\n
