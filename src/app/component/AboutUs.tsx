@@ -54,7 +54,7 @@ function AboutUs() {
         <div className="mt-4 w-0 h-[50px] border-[1px] border-black"></div>
       </div>
 
-      <div className="text-center text-[33px] mt-4">
+      <div className="text-center text-[33px] mt-4 ">
         <p>
           TheFinansol is a team of experienced AI Professionals, having
           expertise in <br /> different domains ranging from Conversational AI
@@ -66,34 +66,37 @@ function AboutUs() {
         </p>
       </div>
 
-      <div className="flex justify-center gap-20 mt-[100px] mb-10">
-        <div
-          className="w-[600px] h-[650px] bg-[#594BE7] rounded-3xl p-5"
-          ref={(el) => {
-            boxesRef.current[0] = el; // Do not return anything from here
-          }}
-        >
-          <Image
-            className="w-fit rounded-2xl shadow-lg"
-            src={img1}
-            alt="gif"
-          />
-          <div className="pt-10 flex flex-col gap-3">
-            <h1 className="text-white text-xl">Efficiency & Scalability</h1>
-            <p className="text-white">
-              Build intelligent AI search & chat systems over hundreds of
-              <br />
-              thousands web pages.
-            </p>
-          </div>
-        </div>
-        <div
-          className="w-[600px] h-[650px] bg-[#9086EF] rounded-3xl"
-          ref={(el) => {
-            boxesRef.current[1] = el; // Do not return anything from here
-          }}
-        ></div>
-      </div>
+      <div className="flex flex-col mx-3 md:flex-row gap-10 md:gap-20 justify-center mt-[100px] mb-10">
+  <div
+    className="w-full md:w-[500px] lg:w-[600px] h-auto md:h-[650px] bg-[#594BE7] rounded-3xl p-5"
+    ref={(el) => {
+      boxesRef.current[0] = el;
+    }}
+  >
+    <Image
+      className="w-full rounded-2xl shadow-lg"
+      src={img1}
+      alt="gif"
+    />
+    <div className="pt-10 flex flex-col gap-3">
+      <h1 className="text-white text-lg md:text-xl">
+        Efficiency & Scalability
+      </h1>
+      <p className="text-white text-sm md:text-base">
+        Build intelligent AI search & chat systems over hundreds of
+        <br />
+        thousands web pages.
+      </p>
+    </div>
+  </div>
+  <div
+    className="w-full h-[650px] md:w-[500px] lg:w-[600px]  md:h-[650px] bg-[#9086EF] rounded-3xl"
+    ref={(el) => {
+      boxesRef.current[1] = el;
+    }}
+  ></div>
+</div>
+
     </div>
   );
 }

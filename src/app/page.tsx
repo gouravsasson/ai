@@ -33,11 +33,12 @@ export default function Home() {
 
   return (
     <>
+    <div className="">
       <div className="bg-black min-h-screen flex flex-col px-20 gap-20">
         <Navbar />
         <HeroSection />
       </div>
-      <div id="sticky-section" className="min-h-screen">
+      <div id="sticky-section" className="min-h-full">
         <StickySection />
       </div>
       <div className="h-screen  bg-black">
@@ -47,11 +48,12 @@ export default function Home() {
         </div> 
       </div>
 
-      <div className=" w-full h-screen">
+      <div className=" w-full h-full">
         <BusinesSupport />
       </div>
       <div className=" w-full h-fit">
         <Footer />
+      </div>
       </div>
     </>
   );

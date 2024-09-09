@@ -26,7 +26,7 @@ function Navbar() {
       <div>
         <div className=" flex items-center justify-between  py-5 bg-transparent">
           <Image className=" w-52" src={logo} alt="Logo" />
-          <div className=" flex gap-10 mr-20">
+          <div className=" hidden md:block md:flex gap-10 mr-20">
             <button className=" text-[#FFFFFF] font-Lexend Light font-bold">Home</button>
             <button 
               className=" text-[#FFFFFF] font-Lexend font-bold" 

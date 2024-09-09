@@ -38,7 +38,7 @@ function OurServices() {
   return (
     <>
       <div className="h-full w-full px-20">
-        <div className="mt-[100px] flex justify-evenly relative">
+        <div className="mt-[100px] md:flex justify-evenly relative">
           <div className="  sticky top-20" ref={containerRef1}>
             <h1 className="font-Lexend text-[50px] text-[#9086EF]">
               AI Chatbots
@@ -59,7 +59,7 @@ function OurServices() {
         </div>
 
 
-        <div className="mt-[100px] flex justify-evenly relative">
+        <div className="mt-[100px] md:flex justify-evenly relative">
           <Image className="h-[570px] sticky top-20" src={img} alt="Logo" />
           <div className="sticky top-20" ref={containerRef2}>
             <h1 className="font-Lexend text-[50px] text-[#9086EF]">
@@ -74,7 +74,7 @@ function OurServices() {
           </div>
         </div>
 
-        <div className="mt-[100px] flex justify-evenly relative">
+        <div className="mt-[100px] md:flex justify-evenly relative">
           <div className="sticky top-20" ref={containerRef3}>
             <h1 className="font-Lexend text-[50px] text-[#9086EF]">
               Image and Video Analytics
