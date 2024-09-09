@@ -71,7 +71,7 @@ const StickySections = () => {
         <AboutUs/>
       </div>
       <div
-        className="relative flex flex-col items-center justify-center bg-[#E4E8F5] "
+        className=" flex flex-col items-center justify-center bg-[#E4E8F5] "
         ref={sectionRef2}
       >
         

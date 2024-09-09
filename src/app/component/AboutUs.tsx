@@ -47,14 +47,14 @@ function AboutUs() {
 
   return (
     <div className="" ref={containerRef}>
-      <div className="mt-[100px] flex flex-col items-center">
+      <div className="mt-5  md:mt-[100px] flex flex-col items-center">
         <h1 className="font-Lexend text-center text-[14px] font-bold">
           What is THEFINANSOL?
         </h1>
         <div className="mt-4 w-0 h-[50px] border-[1px] border-black"></div>
       </div>
 
-      <div className="text-center text-[33px] mt-4 ">
+      <div className=" hidden md:block text-center md:text-[33px] mt-4  ">
         <p>
           TheFinansol is a team of experienced AI Professionals, having
           expertise in <br /> different domains ranging from Conversational AI
@@ -65,7 +65,17 @@ function AboutUs() {
           projects.
         </p>
       </div>
-
+      <div className="  md:hidden text-center md:text-[33px] mt-4  px-3 ">
+        <p>
+          TheFinansol is a team of experienced AI Professionals, having
+          expertise in  different domains ranging from Conversational AI
+          to IoT and Custom
+           Enterprise-grade AI Projects. Based out of Delhi, we started
+          our journey
+           in 2017 and have come a long way in AI with exemplary
+          projects.
+        </p>
+      </div>
       <div className="flex flex-col mx-3 md:flex-row gap-10 md:gap-20 justify-center mt-[100px] mb-10">
   <div
     className="w-full md:w-[500px] lg:w-[600px] h-auto md:h-[650px] bg-[#594BE7] rounded-3xl p-5"

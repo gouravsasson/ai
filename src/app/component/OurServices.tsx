@@ -38,8 +38,8 @@ function OurServices() {
   return (
     <>
       <div className="h-full w-full px-20">
-        <div className="mt-[100px] md:flex justify-evenly relative">
-          <div className="  sticky top-20" ref={containerRef1}>
+        <div className="mt-[100px] md:flex justify-evenly ">
+          <div className="" ref={containerRef1}>
             <h1 className="font-Lexend text-[50px] text-[#9086EF]">
               AI Chatbots
             </h1>
@@ -53,15 +53,15 @@ function OurServices() {
             </p>
           </div>
           <Image
-            className=" w-fit"
+            className=""
             src={vid1}
             alt="gif"></Image>
         </div>
 
 
-        <div className="mt-[100px] md:flex justify-evenly relative">
-          <Image className="h-[570px] sticky top-20" src={img} alt="Logo" />
-          <div className="sticky top-20" ref={containerRef2}>
+        <div className="mt-[100px] md:flex justify-evenly ">
+          <Image className="hidden md:block h-[570px]" src={img} alt="Logo" />
+          <div className="" ref={containerRef2}>
             <h1 className="font-Lexend text-[50px] text-[#9086EF]">
               Text Analytics
             </h1>
@@ -72,10 +72,11 @@ function OurServices() {
               possible chatbots, sentiment analysis, knowledge management and so on.
             </p>
           </div>
+          <Image className=" md:hidden " src={img} alt="Logo" />
         </div>
 
-        <div className="mt-[100px] md:flex justify-evenly relative">
-          <div className="sticky top-20" ref={containerRef3}>
+        <div className="mt-[100px] md:flex justify-evenly ">
+          <div className="" ref={containerRef3}>
             <h1 className="font-Lexend text-[50px] text-[#9086EF]">
               Image and Video Analytics
             </h1>
@@ -88,7 +89,7 @@ function OurServices() {
               alerts, tracking, autonomous driving and so on.
             </p>
           </div>
-          <Image className="h-[570px] sticky top-20" src={img2} alt="Logo" />
+          <Image className=" md:h-[570px]" src={img2} alt="Logo" />
         </div>
       </div>
     </>
