@@ -10,26 +10,26 @@ import Footer from "./component/Footer";
 import BusinesSupport from "./component/BusinesSupport";
 
 export default function Home() {
-  // useEffect(() => {
-  //   const lenis = new Lenis({
-  //     duration: 1.5,
-  //     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-  //     smooth: true,
-  //     smoothTouch: false,
-  //     direction: "vertical",
-  //   });
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.5,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smooth: true,
+      smoothTouch: false,
+      direction: "vertical",
+    });
 
-  //   const raf = (time) => {
-  //     lenis.raf(time);
-  //     requestAnimationFrame(raf);
-  //   };
+    const raf = (time) => {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    };
 
-  //   requestAnimationFrame(raf);
+    requestAnimationFrame(raf);
 
-  //   return () => {
-  //     lenis.destroy();
-  //   };
-  // }, []);
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
 
   return (
     <>
@@ -41,7 +41,7 @@ export default function Home() {
       <div id="sticky-section" className="min-h-full">
         <StickySection />
       </div>
-      <div className="h-screen  bg-black">
+      <div className=" pb-20 md:h-screen  bg-black">
          <div className="  flex flex-col gap-20">
           <h1 className=" text-white text-3xl md:text-[100px] text-center mt-20">Testimonials</h1>
           <InfiniteMoving />

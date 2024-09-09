@@ -3,10 +3,10 @@ import Image from 'next/image'
 import logo from "@/assets/logo.png"
 function Footer() {
   return (
-    <footer className="footer flex justify-between bg-black px-10 text-white items-center p-4">
+    <footer className="footer flex justify-between bg-black px-10 text-white items-center p-4 mt-3">
   <aside className=" flex items-center">
     <Image className=' w-52' src={logo} alt='logo'/>
-    <p className= "pl-5">Copyright © {new Date().getFullYear()} - All right reserved</p>
+    <p className= "hidden md:block pl-5">Copyright © {new Date().getFullYear()} - All right reserved</p>
   </aside>
   <nav className=" flex grid-flow-col gap-4 md:place-self-center md:justify-self-end">
     <a>

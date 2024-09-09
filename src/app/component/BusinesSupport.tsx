@@ -19,8 +19,8 @@ function BusinessSupport() {
   ];
 
   return (
-    <div className="px-52">
-      <h1 className="text-center text-5xl my-5">Business Support</h1>
+    <div className="md:px-52">
+      <h1 className="text-center text-2xl md:text-5xl my-5">Business Support</h1>
       <div className="mt-20 flex flex-wrap justify-center gap-20">
         {services.map((service, index) => (
           <div key={index}>
