@@ -5,7 +5,7 @@ import Lenis from "@studio-freight/lenis";
 import Navbar from "./component/Navbar";
 import HeroSection from "./component/HeroSection";
 import StickySection from "./component/StickySection";
-// import { InfiniteMoving } from "./component/InfiniteMoving";
+import { InfiniteMoving } from "./component/InfiniteMoving";
 import Footer from "./component/Footer";
 import BusinesSupport from "./component/BusinesSupport";
 
@@ -40,12 +40,12 @@ export default function Home() {
       <div id="sticky-section" className="min-h-screen">
         <StickySection />
       </div>
-      {/* <div className="h-screen  bg-black">
+      <div className="h-screen  bg-black">
          <div className="  flex flex-col gap-20">
           <h1 className=" text-white text-[100px] text-center mt-20">Testimonials</h1>
           <InfiniteMoving />
         </div> 
-      </div> */}
+      </div>
 
       <div className=" w-full h-screen">
         <BusinesSupport />
