@@ -6,7 +6,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import img from "../../assets/img/img2.png";
 import img2 from "../../assets/img/img3.png";
-// import vid1 from "@/assets/video/iphone15.gif";
+import vid1 from "@/assets/video/iphone15.gif";
 
 
 
@@ -54,7 +54,7 @@ function OurServices() {
           </div>
           <Image
             className=" w-fit"
-            src={img2}
+            src={vid1}
             alt="gif"></Image>
         </div>
 
