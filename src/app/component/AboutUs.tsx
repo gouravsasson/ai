@@ -2,13 +2,14 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import img1 from "@/assets/img/models.gif";
+import img2 from "@/assets/img/aichatbot.png"
 import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function AboutUs() {
   const containerRef = useRef<HTMLDivElement | null>(null);
-  const boxesRef = useRef<(HTMLDivElement | null)[]>([]); // Use specific typing for better TypeScript support
+  const boxesRef = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
     gsap.fromTo(
@@ -78,17 +79,17 @@ function AboutUs() {
       </div>
       <div className="flex flex-col mx-3 md:flex-row gap-10 md:gap-20 justify-center mt-[100px] mb-10">
   <div
-    className="w-full md:w-[500px] lg:w-[600px] h-auto md:h-[650px] bg-[#594BE7] rounded-3xl p-5"
+    className="w-full md:w-[500px] lg:w-[600px] h-auto md:h-[650px] bg-[#594BE7] rounded-3xl p-5 flex flex-col"
     ref={(el) => {
       boxesRef.current[0] = el;
     }}
   >
     <Image
-      className="w-full rounded-2xl shadow-lg"
+      className=" basis-[70%] w-full rounded-2xl shadow-lg"
       src={img1}
       alt="gif"
     />
-    <div className="pt-10 flex flex-col gap-3">
+    <div className="basis-[30%] pt-10 flex flex-col gap-3">
       <h1 className="text-white text-lg md:text-xl">
         Efficiency & Scalability
       </h1>
@@ -100,11 +101,29 @@ function AboutUs() {
     </div>
   </div>
   <div
-    className="w-full h-[650px] md:w-[500px] lg:w-[600px]  md:h-[650px] bg-[#9086EF] rounded-3xl"
+    className="w-full  p-5 md:w-[500px] lg:w-[600px]  md:h-[650px] bg-[#9086EF] rounded-3xl flex flex-col"
     ref={(el) => {
       boxesRef.current[1] = el;
     }}
-  ></div>
+  >
+    <div className="basis-[70%] ">
+     <Image
+      className="w-full"
+      src={img2}
+      alt="gif"
+    />
+    </div>
+    <div className="basis-[30%] pt-10 flex flex-col gap-3">
+      <h1 className="text-white text-lg md:text-xl">
+        Efficiency & Scalability
+      </h1>
+      <p className="text-white text-sm md:text-base">
+        Build intelligent AI search & chat systems over hundreds of
+        <br />
+        thousands web pages.
+      </p>
+    </div>
+  </div>
 </div>
 
     </div>

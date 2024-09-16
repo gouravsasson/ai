@@ -10,31 +10,31 @@ import Footer from "./component/Footer";
 import BusinesSupport from "./component/BusinesSupport";
 
 export default function Home() {
-  // useEffect(() => {
-  //   const lenis = new Lenis({
-  //     duration: 1.5,
-  //     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-  //     smooth: true,
-  //     smoothTouch: false,
-  //     direction: "vertical",
-  //   });
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.5,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+     
+      smoothTouch: false,
+      direction: "vertical",
+    });
 
-  //   const raf = (time) => {
-  //     lenis.raf(time);
-  //     requestAnimationFrame(raf);
-  //   };
+    const raf = (time) => {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    };
 
-  //   requestAnimationFrame(raf);
+    requestAnimationFrame(raf);
 
-  //   return () => {
-  //     lenis.destroy();
-  //   };
-  // }, []);
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
 
   return (
     <>
     <div className="">
-      <div className="bg-black min-h-screen flex flex-col px-20 gap-20">
+      <div className="bg-black md:h-screen flex flex-col  gap-20">
         <Navbar />
         <HeroSection />
       </div>

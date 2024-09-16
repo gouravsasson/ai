@@ -52,10 +52,16 @@ function OurServices() {
                cutting-edge performance and exceptional user experience.
             </p>
           </div>
-          <Image
-            className=""
-            src={vid1}
-            alt="gif"></Image>
+          <video 
+          className="h-[500px]"
+          autoPlay 
+          muted 
+          loop 
+          playsInline
+        >
+          <source src="/movie-webm.webm" type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
         </div>
 
 
